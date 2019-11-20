@@ -91,6 +91,28 @@ main > section:nth-child(1) article {
     object-fit: scale-down;
 }
 
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    height: 60px;
+    background-color: #ee2737;
+    border: none;
+    border-radius: 3rem;
+    font-size: 1rem;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 20px 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: 2px 2px 8px 2px #ee27386b;
+}
+
 main section:nth-child(2),
 main section:nth-child(3),
 main section:nth-child(4) {
@@ -166,11 +188,22 @@ main section:nth-child(4) img {
     box-shadow: 2px 2px 8px 2px #ee27386b;
 }
 
-input.btn-enviar {
-    width: 100px;
+.btn-enviar {
+    width: 200px;
     margin-top: 15px;
-    padding: 28px;
-    height: 100px;
+    height: 60px;
+    background-color: #ee2737;
+    border: none;
+    border-radius: 3rem;
+    font-size: 1rem;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-enviar:focus {
+    outline: none;
+    box-shadow: 2px 2px 8px 2px #ee27386b;
 }
 
 footer {
