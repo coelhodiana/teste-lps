@@ -92,9 +92,6 @@ main > section:nth-child(1) article {
 }
 
 .btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-top: 15px;
     height: 60px;
     background-color: #ee2737;
@@ -105,7 +102,6 @@ main > section:nth-child(1) article {
     font-weight: 600;
     cursor: pointer;
     padding: 20px 40px;
-    font-family: 'Poppins', sans-serif;
 }
 
 .btn:focus {
@@ -208,8 +204,6 @@ main section:nth-child(4) img {
 
 footer {
     display: flex;
-
-    flex-wrap: wrap;
     height: 150px;
     padding: 40px;
 }
