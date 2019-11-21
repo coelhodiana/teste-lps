@@ -1,0 +1,231 @@
+/* Gerais */
+
+section {
+    /* padding: 100px  40px ; */
+}
+
+h1 {
+    font-size: 2.4rem;
+    font-weight: 800;
+    line-height: 2.8rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+/* Navbar */
+
+nav {
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 40px; */
+}
+
+.header-links {
+    color: #ee2737;
+    font-weight: 600;
+    padding: 20px 40px;
+    text-decoration: none;
+}
+
+.header-links:hover {
+    background-color: #ee2737;
+    color: white;
+    border-radius: 3rem;
+    box-shadow: 8px 8px 20px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* hero-header */
+
+.hero-header {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.red-text {
+    color: #ee2737;
+}
+
+/* end hero-header */
+
+/* main */
+
+    /* first section */
+.section-caju {
+    display: grid;
+    grid-template-areas:
+        "image"
+        "text";
+    align-items: center;
+}
+
+.caju-ilustra {
+    grid-area: image;
+    width: 100%;
+    object-fit: scale-down;
+}
+
+.caju-text {
+    grid-area: text;
+    margin-top: 50px;
+}
+
+@media (min-width: 800px){
+    .section-caju {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "text image";
+        align-items: center;
+    }
+
+    .caju-text {
+        grid-area: text;
+        padding-right: 10%;
+    }
+
+}
+    
+    /* second section */
+
+.section-app {
+    display: grid;
+    grid-template-areas:
+        "text2"
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.iphone-app {
+    display: none;
+}
+
+.section-app-text {
+    grid-area: text2;
+}
+
+.app-icons {
+    width: 100%;
+    object-fit: scale-down;
+    margin-top: 50px;
+}
+
+@media (min-width: 800px){
+    .section-app {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "text2 image2";
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .section-app-text {
+        grid-area: text2;
+        padding-right: 10%;
+    }
+
+    .iphone-app {
+        grid-area: image2;
+        width: 100%;
+        object-fit: scale-down;
+        display: flex;
+    }
+
+    
+}
+
+
+/* end main */
+
+/* footer */
+footer {
+    display: grid;
+    grid-template-areas:
+        "logo"
+        "links"
+        "social";
+    height: 150px;
+    padding: 40px;
+}
+
+footer > a {
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.links {
+    grid-area: links;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.social-links {
+    grid-area: social;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.links li a,
+.social-links li a{
+    color: #ee2737;
+    font-weight: 600;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.links li a:hover,
+.social-links li a:hover{
+    border-bottom: dotted 2px #ee2737;
+} 
+
+@media (min-width: 800px) {
+    footer {
+        display: grid;
+        grid-template-columns: 5% 1fr 1fr;
+        grid-template-areas:
+            "logo links social";
+        height: 200px;
+        padding: 40px;
+    }
+
+    .links {
+        grid-area: links;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 30px;
+    }
+
+    .social-links {
+        grid-area: social;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 30px;
+    }
+
+}
+
