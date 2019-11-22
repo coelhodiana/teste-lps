@@ -11,6 +11,11 @@ h1 {
     margin-bottom: 20px;
 }
 
+h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
 p {
     font-size: 1.2rem;
     line-height: 2rem;
@@ -130,8 +135,6 @@ nav {
             "text2 image2";
         align-items: center;
         justify-content: center;
-        margin-top: 100px;
-        margin-bottom: 100px;
     }
 
     .section-app-text {
@@ -141,14 +144,59 @@ nav {
 
     .iphone-app {
         grid-area: image2;
-        width: 100%;
+        justify-self: center;
         object-fit: scale-down;
         display: flex;
     }
 
-    
 }
 
+/* section-categories */
+.section-categories {
+    display: grid;
+    grid-template-areas:
+        "text3"
+        "cards";
+}
+
+.categories {
+    grid-area: cards;
+}
+
+.category-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 10rem;
+    box-shadow: 2px 10px 20px 8px rgba(0, 0, 0, 0.06);
+    margin-bottom: 1rem;
+}
+
+.icon {
+    background-color: #ee2737;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+@media (min-width: 800px){
+    .section-categories {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "text3 cards";
+    }
+
+    .categories {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.5rem;
+    }
+
+}
 
 /* end main */
 
